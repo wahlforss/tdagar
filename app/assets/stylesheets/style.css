@@ -1,5 +1,5 @@
 body {
-	background-image:url(crowd01.jpg);
+	background-image:url("crowd01.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
