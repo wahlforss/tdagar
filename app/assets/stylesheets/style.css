@@ -58,3 +58,7 @@ h1 {
 	color:white;
 	background-color: black;
 }
+
+a {
+	text-decoration: none;
+}
