@@ -34,10 +34,9 @@ h1 {
 
 iframe {
 	width: 30em;
-	height: 16.8em;
 	margin: 50px auto;
 	display: block;
-	max-width: 100%;
+	max-width: 80%;
 }
 
 .button {
