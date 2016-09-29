@@ -37,6 +37,7 @@ h1 {
 	height: 20em;
 	margin: 50px auto;
 	display: block;
+	max-width: 100%;
 }
 
 .button {
