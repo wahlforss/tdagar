@@ -9,16 +9,16 @@
 			<%= f.text_field :namn, required: true %>
 			<br>
 
-			<%= f.label :Ålder %> <br>
-			<%= f.email_field :Ålder, required: true %>
+			<%= f.label :alder %> <br>
+			<%= f.email_field :alder, required: true %>
 
 			<br>
 
-			<%= f.label "Telefonnummer" %> <br>
+			<%= f.label :telefon %> <br>
 			<%= f.text_area :telefon, as: :text %>
 			<br>
 
-			<%= f.label "Vem är du?" %> <br>
+			<%= f.label :who_are_you %> <br>
 			<%= f.text_area :who_are_you, as: :text %>
 
 			<div class="hidden">
