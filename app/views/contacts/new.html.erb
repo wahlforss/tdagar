@@ -1,32 +1,38 @@
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name=viewport content='width=300'>
+</head>
 <div class="wrapper">
 	<h1>TRETTIO DAGAR</h1>
-	<h2>Skriv in dina uppgifter.</h2>
-	<h2>Om vi finner dig lämplig hör vi av oss.</h2>
+	<div class="uppgifter">
+		<h2>Skriv in dina uppgifter.</h2>
+		<h2>Om vi finner dig lämplig hör vi av oss.</h2>
+	</div>
 
 	<div class="form">
 		<%= form_for @contact do |f| %>
-			<%= f.label :namn %> <br>
+			<h3>Namn</h3>
 			<%= f.text_field :namn, required: true %>
 			<br>
 
-			<%= f.label "Ålder" %> <br>
-			<%= f.number_field :alder, required: true %>
+			<h3>Ålder</h3>
+			<%= f.text_field :alder, required: true %>
 
 			<br>
 
-			<%= f.label "Telefonnummer" %> <br>
+			<h3>Telefonnummer</h3>
 			<%= f.text_area :telefon, as: :text %>
 			<br>
 
-			<%= f.label "Vem är du?" %> <br>
+			<h3>Vem är du?</h3>
 			<%= f.text_area :who_are_you, as: :text %>
 
 			<div class="hidden">
-			<%= f.label :nickname %> <br>
+			<%= f.label :nickname %>
 			<%= f.text_field :nickname, hint: 'leave this field blank' %>	
 			</div>
 
-			<%= f.submit 'Send Message', class: "button" %>
+			<%= f.submit 'Skicka', class: "send_email" %>
 		<% end %>
 	</div>
 </div>
