@@ -1,24 +1,32 @@
-<h1 class="page_title">Say Hello</h1>
+<div class="wrapper">
+	<h1>TRETTIO DAGAR</h1>
+	<h2>Skriv in dina uppgifter.</h2>
+	<h2>Om vi finner dig lämplig hör vi av oss.</h2>
 
-<div class="form">
-	<%= form_for @contact do |f| %>
-		<%= f.label :name %> <br>
-		<%= f.text_field :name, required: true %>
-		<br>
+	<div class="form">
+		<%= form_for @contact do |f| %>
+			<%= f.label :namn %> <br>
+			<%= f.text_field :namn, required: true %>
+			<br>
 
-		<%= f.label :email %> <br>
-		<%= f.email_field :email, required: true %>
+			<%= f.label :Ålder %> <br>
+			<%= f.email_field :Ålder, required: true %>
 
-		<br>
+			<br>
 
-		<%= f.label :message %> <br>
-		<%= f.text_area :message, as: :text %>
+			<%= f.label "Telefonnummer" %> <br>
+			<%= f.text_area :telefon, as: :text %>
+			<br>
 
-		<div class="hidden">
-		<%= f.label :nickname %> <br>
-		<%= f.text_field :nickname, hint: 'leave this field blank' %>	
-		</div>
+			<%= f.label "Vem är du?" %> <br>
+			<%= f.text_area :who_are_you, as: :text %>
 
-		<%= f.submit 'Send Message', class: "button" %>
-	<% end %>
+			<div class="hidden">
+			<%= f.label :nickname %> <br>
+			<%= f.text_field :nickname, hint: 'leave this field blank' %>	
+			</div>
+
+			<%= f.submit 'Send Message', class: "button" %>
+		<% end %>
+	</div>
 </div>
