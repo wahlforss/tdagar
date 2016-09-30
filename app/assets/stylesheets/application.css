@@ -112,14 +112,14 @@ input[type=text], textarea {
   -ms-transition: all 0.30s ease-in-out;
   -o-transition: all 0.30s ease-in-out;
   outline: none;
-  padding: 10px 0px 3px 3px;
+  padding: 10px 3px 3px 3px;
   margin: 5px 0px 10px 0px;
   border: 1px solid #DDDDDD;
   resize: none;
 }
 
 input[type=text] {
-	padding: 10px 0px 3px 15px;
+	padding: 10px 3px 3px 15px;
 
 }
 
@@ -136,7 +136,8 @@ input[type=submit] {
 	background:white; 
 	border:0 none;
     cursor:pointer;
-    -webkit-border-radius: 5px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
     border-radius: 0px;
     margin: 10px auto;
     -webkit-box-shadow: 0 0px 10px rgba(0,0,0,1);
