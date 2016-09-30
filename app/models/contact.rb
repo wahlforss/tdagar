@@ -9,7 +9,7 @@ class Contact < MailForm::Base
 		{
 			:subject => "Contact Form",
 			:to => "alfred@wahlforss.com",
-			:from => %("#{name}" <#{email}>)
+			:from => %("#{namn}")
 		}
 	end
 end
