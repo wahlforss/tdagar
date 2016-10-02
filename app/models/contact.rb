@@ -3,6 +3,7 @@ class Contact < MailForm::Base
 	attribute :alder, 	:validate => true
 	attribute :telefon, :validate => true
 	attribute :who_are_you, :validate => true
+	attribute :stockholm, :validate => true
 	attribute :nickname, :captcha => true
 
 	def headers 

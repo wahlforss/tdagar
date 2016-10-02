@@ -26,6 +26,10 @@
 			<h3>Vem är du?</h3>
 			<%= f.text_area :who_are_you, as: :text %>
 
+			<br>
+			<h3>Bor du i Stockholm?</h3>
+			<%= radio_button_tag :stockholm, required: true %>
+
 			<div class="hidden">
 			<%= f.label :nickname %>
 			<%= f.text_field :nickname, hint: 'leave this field blank' %>	
