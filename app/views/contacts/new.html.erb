@@ -23,11 +23,11 @@
 			<%= f.text_field :telefon, as: :text %>
 			<br>
 
-			<h3>Vem är du?</h3>
+			<h3>Några rader om dig själv</h3>
 			<%= f.text_area :who_are_you, as: :text %>
 
-			<h3>Bor du i Stockholm?</h3>
-			<%= f.radio_button :stockholm, required: true %>
+			<h3>Jag bor i Stockholm</h3>
+			<%= f.radio_button :stockholm, class: 'radio', required: true %>
 
 			<div class="hidden">
 			<%= f.label :nickname %>
